@@ -1,3 +1,41 @@
 body {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 35%;
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#name {
+    width: auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+#email {
+    width: auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
 }
