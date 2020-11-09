@@ -2,17 +2,21 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    font-size: large;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 153), rgb(255, 255, 204));
+    font-family: 'Lato';
 }
 
 #body {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: rgba(0, 71, 179, 0.85);
     width: 35%;
     padding: 20px;
     margin: auto;
     text-align: left;
     border-radius: 10px;
+    color: white;
 }
 
 form {
@@ -20,22 +24,9 @@ form {
     flex-direction: column;
     width: 100%;
 }
-
-#name {
+.input {
     width: auto;
     padding: 10px;
     border-radius: 4px;
-}
-#email {
-    width: auto;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-textarea {
-    width: 100%;
-}
-
-#submit {
-    width: 100%;
+    background-color: white;
 }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Favorite Music Style Survey Form</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     </head>
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -15,16 +15,16 @@
         <form id="survey-form" action="">
 
             <label id="name-label" for="name">Name:</label><br>
-            <input id="name" type="text" placeholder="Enter your Name" required>
+            <input class="input" id="name" type="text" placeholder="Enter your Name" required>
             <br><br>
             <label id="email-label" for="email">Email:</label><br>
-            <input id="email" type="email" placeholder="Enter your Email address" required>
+            <input class="input" id="email" type="email" placeholder="Enter your Email address" required>
             <br><br>
             <label id="number-label" for="number">Age</label><br>
-            <input type="number" id="number" placeholder="Age" min="15" max="99">
+            <input class="input" type="number" id="number" placeholder="Age" min="15" max="99">
             <br><br>
             <label for="dropdown">Choos you favorite music style:</label><br>
-            <select name="dropdown" id="dropdown">
+            <select class="input" name="dropdown" id="dropdown" aria-placeholder="Choos you favorite music style">
                 <option value="rock">Rock</option>
                 <option value="electronic">Electronic</option>
                 <option value="soul">Soul/R&B</option>
@@ -34,32 +34,36 @@
                 <option value="regge">Regge</option>
             </select>
             <br><br>
-            <p>How ofter are you leasen your favorite music?</p>
-            <input type="radio" name="frequency" id="always" value="always">
-            <label for="always">Always</label><br>
-            <input type="radio" name="frequency" id="frequently" value="frequently">
-            <label for="frequently">Frequently</label><br>
-            <input type="radio" name="frequency" id="seldom" value="seldom">
-            <label for="seldom">Seldom</label><br>
-            <input type="radio" name="frequency" id="never" value="never">
-            <label for="never">Never</label><br>
-
-            <p>Check the media you are using to leasen the music</p>
-            <input type="checkbox" name="streaming" id="streaming" value="streaming">
-            <label for="streaming">Audio streaming</label><br>
-            <input type="checkbox" name="ipod" id="ipod" value="ipod">
-            <label for="ipod">I-pod</label><br>
-            <input type="checkbox" name="radio" id="radio" value="radio">
-            <label for="radio">Radio</label><br>
-            <input type="checkbox" name="mobile" id="mobile" value="mobile">
-            <label for="mobile">Moblie phone</label><br>
+            <div>
+                <p>How ofter are you leasen your favorite music?</p>
+                <input type="radio" name="frequency" id="always" value="always">
+                <label for="always">Always</label><br>
+                <input type="radio" name="frequency" id="frequently" value="frequently">
+                <label for="frequently">Frequently</label><br>
+                <input type="radio" name="frequency" id="seldom" value="seldom">
+                <label for="seldom">Seldom</label><br>
+                <input type="radio" name="frequency" id="never" value="never">
+                <label for="never">Never</label><br>
+            </div>
+            <div>
+                <p>Check the media you are using to leasen the music</p>
+                <input type="checkbox" name="streaming" id="streaming" value="streaming">
+                <label for="streaming">Audio streaming</label><br>
+                <input type="checkbox" name="ipod" id="ipod" value="ipod">
+                <label for="ipod">I-pod</label><br>
+                <input type="checkbox" name="radio" id="radio" value="radio">
+                <label for="radio">Radio</label><br>
+                <input type="checkbox" name="mobile" id="mobile" value="mobile">
+                <label for="mobile">Moblie phone</label>
+            </div>
+            <br>
             <br>
 
             <label for="input-textra">Any comments or sugestions?</label><br>
-            <textarea name="input-textra" id="input-textra" rows="10"></textarea>
+            <textarea class="input" name="input-textra" id="input-textra" rows="10"></textarea>
             <br><br>
 
-            <button id="submit" type="submit">Submit</button>
+            <button class="input" id="submit" type="submit">Submit</button>
 
         </form>
     </div>
